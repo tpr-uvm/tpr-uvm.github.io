@@ -66,7 +66,7 @@ table = """
     <th>Score</th>
   </tr>
 """
-commands = [ (1, 'Jump', 1000) , (2, 'Walk', 999), (3, 'Run', 923), (4, 'Stand still', 600) , (5, 'Roll', 20) ]
+commands = [ (1, 'Jump', 1000) , (2, 'Walk', 999), (3, 'Run', 923), (4, 'Stand still', 600) , (5, 'Roll', 20), (6, 'Dig', 1) ]
 
 for i in commands:
 
