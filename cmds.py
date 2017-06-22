@@ -45,6 +45,7 @@ start = """
 <div class="container-fluid">
   <div class="row content">
     <div class="col-sm-3 sidenav">
+<img src="TPR.png" class="img-responsive" style="width: 90%; margin-right:auto; margin-left:auto; margin-top: 1em;" alt="TPR Logo">
       <h4>TPR Data</h4>
       <ul class="nav nav-pills nav-stacked">
         <li><a href="index.html">Home</a></li>
