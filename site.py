@@ -1,4 +1,4 @@
-
+main_page = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,3 +59,9 @@
 </footer>
 </body>
 </html>
+"""
+f = open('index.html','w')
+f.write(main_page)
+f.close()
+
+
