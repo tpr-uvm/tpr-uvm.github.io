@@ -1,3 +1,5 @@
+import datetime
+
 start = """
 <!DOCTYPE html>
 <html lang="en">
@@ -34,6 +36,9 @@ start = """
    h2{
 	text-align: center;
 }
+ h6{
+	text-align: center;
+}
   </style>
 </head>
 <body>
@@ -52,6 +57,7 @@ start = """
       <h2>Command Information</h2>
       """
 
+start = start + '<h6>Last Updated: ' + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")) + ' EST</h6>'
 table = """
 <table>
   <tr>
