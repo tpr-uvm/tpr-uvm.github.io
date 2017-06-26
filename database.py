@@ -420,7 +420,7 @@ class DATABASE:
     def Fetch_Topn_Unique_Commands(self, topn):
         if topn == 'all':
             sql = """SELECT cmdTxt as cmd, totalLearnability as score FROM unique_commands 
-            ORDER BY score;"""
+            ORDER BY score DESC;"""
         else:
             sql = """SELECT cmdTxt as cmd, totalLearnability as score FROM unique_commands 
             ORDER BY score DESC LIMIT %d;"""%(topn)
