@@ -14,7 +14,7 @@
     
     /* Set gray background color and 100% height */
     .sidenav {
-      background-color: #f1f1f1;
+      background-color: #e2e2e2;
       height: 100%;
     }
     /* Set black background color, white text and some padding */
@@ -34,6 +34,17 @@
    h2{
 	text-align: center;
 }
+p{
+margin-left: 7.5%;
+margin-right: 7.5%;
+line-height: 28px;
+font-size: 16px;
+}
+li:hover
+a:hover{
+font-weight: bold;
+background-color: #e2e2e2;
+}
   </style>
 </head>
 <body>
@@ -41,17 +52,18 @@
   <div class="row content">
     <div class="col-sm-3 sidenav">
 <img src="TPR.png" class="img-responsive" style="width: 90%; margin-right:auto; margin-left:auto; margin-top: 1em;" alt="TPR Logo">
-      <h4>TPR Data</h4>
+      <h4>Menu</h4>
       <ul class="nav nav-pills nav-stacked">
         <li><a href="index.html">Home</a></li>
         <li><a href="users.html">Users</a></li>
-        <li><a href="https://jfelag.github.io/tprInfo/cmds.html">Commands</a></li>
+        <li><a href="cmds.html">Commands</a></li>
       </ul><br>  
     </div>
     <div class="col-sm-9">
       <hr>
       <h2>Twitch Plays Robotics</h2>
-      <p>Twitch Plays Robotics (TPR,) is a community-driven project to teach robots language.  Using the Twitch platform to broadcast and gather feedback on simulated robots, this information is passed through to an evolutionary algorithm to train the robots.  </p>
+      <p>Twitch Plays Robotics (TPR,) is a community-driven project to teach robots language.  Using the <a href="https://www.twitch.tv">Twitch</a> platform, simulated robots are broadcasted to users around the world.  They can then give feedback in the chat window, which is grabbed by automated processes which then filters the data, and gives the proper information to an evolutionary algorithm to improve the robots' behaviors.</p>
+<p>This project is based out of the University of Vermont (VT, USA.)
     </div>
   </div>
 </div>

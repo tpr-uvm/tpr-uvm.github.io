@@ -116,7 +116,7 @@ background-color: #e2e2e2;
     </div>
     <div class="col-sm-9">
       <hr>
-      <h2>Command Information</h2>
+      <h2>User Leaderboard</h2>
       """
 
 start = start + '<h6>Last Updated: ' + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")) + ' EST</h6>'
@@ -124,13 +124,13 @@ table = """
 <table>
   <tr>
     <th>Rank</th>
-    <th>Command</th> 
+    <th>Username</th> 
     <th>Score</th>
   </tr>
 """
-commands = [ (1, 'Jump', 1000) , (2, 'Walk', 999), (3, 'Run', 923), (4, 'Stand still', 600) , (5, 'Roll', 20), (6, 'Dig', 1) ]
+users = [ (1, 'jfelag', 1000) , (2, 'zmahoor', 999), (3, 'jbongard', 923), (4, 'janetsbe', 600) , (5, 'flipnash', 290) ]
 
-for i in commands:
+for i in users:
 
 	table = table + '<tr><td>' + str(i[0]) + '</td>'
 	table = table + '<td>' + i[1] + '</td>'
@@ -149,7 +149,7 @@ end = """
 </body>
 </html>
 """
-f = open('cmds.html','w')
+f = open('users.html','w')
 f.write(start + table + end)
 f.close()
 

@@ -14,7 +14,7 @@
     
     /* Set gray background color and 100% height */
     .sidenav {
-      background-color: #f1f1f1;
+      background-color: #e2e2e2;
       height: 100%;
     }
     /* Set black background color, white text and some padding */
@@ -37,6 +37,67 @@
  h6{
 	text-align: center;
 }
+table{
+    border: thick solid #000;
+    border-spacing: 0;
+	width: 90%;
+color: #000;
+margin-left: auto;
+margin-right: auto;
+}
+td{
+    border: thin dashed #000;
+    width: 300px;
+    padding: .3em;
+    text-align: center;
+}
+
+th{
+    border-bottom: thin solid #000;
+    width: 300px;
+    padding: .3em;
+	text-align: center;
+}
+tr{
+   
+    width: 300px;
+}
+
+tr:nth-child(odd){
+    background-color: #e2e2e2;
+}
+tr:nth-child(even){
+    background-color: #fff;
+}
+
+
+tr:last-child
+td:nth-child(2){
+  border: none;  
+  
+}
+
+th:nth-child(1){
+width:25px;
+}
+tr:hover{
+color: #111;
+font-weight: bold;
+font-size: 1.2em;
+}
+td:nth-child(1){
+width: 25px;
+text-align: center;
+}
+td{
+text-align: center;
+border: none;
+}
+li:hover
+a:hover{
+font-weight: bold;
+background-color: #e2e2e2;
+}
   </style>
 </head>
 <body>
@@ -44,17 +105,17 @@
   <div class="row content">
     <div class="col-sm-3 sidenav">
 <img src="TPR.png" class="img-responsive" style="width: 90%; margin-right:auto; margin-left:auto; margin-top: 1em;" alt="TPR Logo">
-      <h4>TPR Data</h4>
+      <h4>Menu</h4>
       <ul class="nav nav-pills nav-stacked">
         <li><a href="index.html">Home</a></li>
         <li><a href="users.html">Users</a></li>
-        <li><a href="https://jfelag.github.io/tprInfo/cmds.html">Commands</a></li>
+        <li><a href="cmds.html">Commands</a></li>
       </ul><br>  
     </div>
     <div class="col-sm-9">
       <hr>
       <h2>Command Information</h2>
-      <h6>Last Updated: 2017-06-22 11:37 EST</h6>
+      <h6>Last Updated: 2017-06-26 08:36 EST</h6>
 <table>
   <tr>
     <th>Rank</th>

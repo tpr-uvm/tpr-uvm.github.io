@@ -1,6 +1,4 @@
-import datetime
 
-start = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -116,30 +114,15 @@ background-color: #e2e2e2;
     </div>
     <div class="col-sm-9">
       <hr>
-      <h2>Command Information</h2>
-      """
-
-start = start + '<h6>Last Updated: ' + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")) + ' EST</h6>'
-table = """
+      <h2>User Leaderboard</h2>
+      <h6>Last Updated: 2017-06-25 20:14 EST</h6>
 <table>
   <tr>
     <th>Rank</th>
-    <th>Command</th> 
+    <th>Username</th> 
     <th>Score</th>
   </tr>
-"""
-commands = [ (1, 'Jump', 1000) , (2, 'Walk', 999), (3, 'Run', 923), (4, 'Stand still', 600) , (5, 'Roll', 20), (6, 'Dig', 1) ]
-
-for i in commands:
-
-	table = table + '<tr><td>' + str(i[0]) + '</td>'
-	table = table + '<td>' + i[1] + '</td>'
-	table = table + '<td>' + str(i[2]) + '</td></tr>'
-
-table = table + '</table>'
-
-
-end = """
+<tr><td>1</td><td>jfelag</td><td>1000</td></tr><tr><td>2</td><td>zmahoor</td><td>999</td></tr><tr><td>3</td><td>jbongard</td><td>923</td></tr><tr><td>4</td><td>janetsbe</td><td>600</td></tr><tr><td>5</td><td>flipnash</td><td>290</td></tr></table>
     </div>
   </div>
 </div>
@@ -148,9 +131,3 @@ end = """
 </footer>
 </body>
 </html>
-"""
-f = open('cmds.html','w')
-f.write(start + table + end)
-f.close()
-
-
