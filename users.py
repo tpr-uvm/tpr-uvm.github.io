@@ -141,12 +141,13 @@ table = """
   </tr>
 """
 users = db.Fetch_Top_Users(100)
-
+rank = 1
 for i in users:
 
-	table = table + '<tr><td>' + str(1) + '</td>'
+	table = table + '<tr><td>' + str(rank) + '</td>'
 	table = table + '<td>' + i['userName'] + '</td>'
 	table = table + '<td>' + str(int(i['score'])) + '</td></tr>'
+	rank = rank + 1
 
 table = table + '</table>'
 
