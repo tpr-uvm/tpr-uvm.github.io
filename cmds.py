@@ -140,7 +140,7 @@ table = """
     <th>Score</th>
   </tr>
 """
-commands = db.Fetch_Topn_Unique_Commands(100)
+commands = db.Fetch_Topn_Unique_Commands(76)
 rank = 1
 for i in commands:
 

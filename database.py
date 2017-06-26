@@ -418,9 +418,12 @@ class DATABASE:
         return self.Execute_Select_Sql_Command(sql, err_msg)
 
     def Fetch_Topn_Unique_Commands(self, topn):
-        sql = """SELECT cmdTxt as cmd, totalLearnability as score FROM unique_commands 
-        ORDER BY score DESC LIMIT %d;"""%(topn)
-
+        if topn == 'all':
+            sql = """SELECT cmdTxt as cmd, totalLearnability as score FROM unique_commands 
+            ORDER BY score;"""
+        else:
+            sql = """SELECT cmdTxt as cmd, totalLearnability as score FROM unique_commands 
+            ORDER BY score DESC LIMIT %d;"""%(topn)
         err_msg = "Failed to retrieve the topn unique commands..."
         return self.Execute_Select_Sql_Command(sql, err_msg)
 
