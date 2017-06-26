@@ -137,7 +137,7 @@ for i in users:
 
 	table = table + '<tr><td>' + str(1) + '</td>'
 	table = table + '<td>' + i['userName'] + '</td>'
-	table = table + '<td>' + str(i['score']) + '</td></tr>'
+	table = table + '<td>' + str(int(i['score'])) + '</td></tr>'
 
 table = table + '</table>'
 
