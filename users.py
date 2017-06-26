@@ -140,7 +140,7 @@ table = """
     <th>Score</th>
   </tr>
 """
-users = db.Fetch_Top_Users(100)
+users = db.Fetch_Top_Users('all')
 rank = 1
 for i in users:
 
