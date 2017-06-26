@@ -310,7 +310,6 @@ class DATABASE:
             sql = """SELECT userName, score FROM users ORDER BY score DESC LIMIT %d;"""%(topn)
         err_msg = "Failed to retrieve scores of top users..."
         return self.Execute_Select_Sql_Command(sql, err_msg)
-Add Comment
 
     #return a list of all commands along with their scores and ranks
     # that were typed (interval) seconds before the current time
