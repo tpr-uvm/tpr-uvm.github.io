@@ -62,8 +62,8 @@ background-color: #e2e2e2;
     <div class="col-sm-9">
       <hr>
       <h2>Twitch Plays Robotics</h2>
-      <p>&emsp; Twitch Plays Robotics (TPR,) is a community-driven project to teach robots language.  Using the <a href="https://www.twitch.tv">Twitch</a> platform, simulated robots are broadcasted to users around the world.  They can then give feedback in the chat window, which is grabbed by automated processes which then filters the data, and gives the proper information to an evolutionary algorithm to improve the robots' behaviors.</p>
-<p>&emsp; This project is based out of the University of Vermont (VT, USA.)
+      <p>&emsp;&emsp; Twitch Plays Robotics (TPR,) is a community-driven project to teach robots language.  Using the <a href="https://www.twitch.tv">Twitch</a> platform, simulated robots are broadcasted to users around the world.  They can then give feedback in the chat window, which is grabbed by automated processes which then filters the data, and gives the proper information to an evolutionary algorithm to improve the robots' behaviors.  Contribute <a href="https://www.twitch.tv/mungozero">here.</a></p>
+<p>&emsp;&emsp; This project is based out of the University of Vermont (VT, USA.)
     </div>
   </div>
 </div>
