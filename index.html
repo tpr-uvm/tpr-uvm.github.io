@@ -45,6 +45,12 @@ a:hover{
 font-weight: bold;
 background-color: #e2e2e2;
 }
+li
+a{
+-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    }
   </style>
 </head>
 <body>
