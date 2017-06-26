@@ -50,6 +50,9 @@ a{
 -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
+    text-align: center;
+    font-weight: bold;
+    color: #111;
     }
   </style>
 </head>
