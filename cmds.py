@@ -1,4 +1,7 @@
 import datetime
+from database import DATABASE
+
+db = DATABASE()
 
 start = """
 <!DOCTYPE html>
@@ -128,13 +131,13 @@ table = """
     <th>Score</th>
   </tr>
 """
-commands = [ (1, 'Jump', 1000) , (2, 'Walk', 999), (3, 'Run', 923), (4, 'Stand still', 600) , (5, 'Roll', 20), (6, 'Dig', 1) ]
+commands = db.Fetch_Topn_Unique_Commands(100)
 
 for i in commands:
 
-	table = table + '<tr><td>' + str(i[0]) + '</td>'
-	table = table + '<td>' + i[1] + '</td>'
-	table = table + '<td>' + str(i[2]) + '</td></tr>'
+	table = table + '<tr><td>' + str(1) + '</td>'
+	table = table + '<td>' + i['cmd'] + '</td>'
+	table = table + '<td>' + str(i['score']) + '</td></tr>'
 
 table = table + '</table>'
 

@@ -1,4 +1,7 @@
 import datetime
+from database import DATABASE
+
+db = DATABASE()
 
 start = """
 <!DOCTYPE html>
@@ -128,13 +131,13 @@ table = """
     <th>Score</th>
   </tr>
 """
-users = [ (1, 'jfelag', 1000) , (2, 'zmahoor', 999), (3, 'jbongard', 923), (4, 'janetsbe', 600) , (5, 'flipnash', 290) ]
+users = db.Fetch_Top_Users(100)
 
 for i in users:
 
-	table = table + '<tr><td>' + str(i[0]) + '</td>'
-	table = table + '<td>' + i[1] + '</td>'
-	table = table + '<td>' + str(i[2]) + '</td></tr>'
+	table = table + '<tr><td>' + str(1) + '</td>'
+	table = table + '<td>' + i['userName'] + '</td>'
+	table = table + '<td>' + str(i['score']) + '</td></tr>'
 
 table = table + '</table>'
 
