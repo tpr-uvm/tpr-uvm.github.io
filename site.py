@@ -19,7 +19,7 @@ main_page = """
     }
     /* Set black background color, white text and some padding */
     footer {
-      background-color: #555;
+      background-color: #e2e2e2;
       color: white;
       padding: 15px;
     }
