@@ -1,4 +1,5 @@
-#!/Desktop/tprInfo
+#! /bin/sh
+cd ~/Desktop/tprInfo
 echo 'path set'
 python site.py && echo 'main page updated'
 timeout 15 python cmds.py && echo 'commands page updated'
