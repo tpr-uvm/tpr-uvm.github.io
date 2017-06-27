@@ -19,9 +19,10 @@ main_page = """
     }
     /* Set black background color, white text and some padding */
     footer {
-      background-color: #e2e2e2;
+      background-color: #d0d0d0;
       color: white;
       padding: 15px;
+      text-align: center;
     }
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
