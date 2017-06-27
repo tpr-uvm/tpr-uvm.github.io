@@ -77,7 +77,7 @@ a{
   </div>
 </div>
 <footer class="container-fluid">
-  <p>TEXT</p>
+  <p><a href="https://www.meclab.org">Morphology, Evolution, Cognition Lab</a></p>
 </footer>
 </body>
 </html>
