@@ -22,8 +22,7 @@ main_page = """
       background-color: #555;
       color: white;
       padding: 15px;
-      text-align: center;
-      
+      text-align: center;  
     }
     footer
     p
