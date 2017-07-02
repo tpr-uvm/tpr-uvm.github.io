@@ -28,6 +28,12 @@ start = """
       color: white;
       padding: 15px;
     }
+    footer
+    p
+    a{
+    text-decoration: underline;
+    color: #96d4ec
+    }
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
       .sidenav {

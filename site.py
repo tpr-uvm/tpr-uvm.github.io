@@ -19,10 +19,17 @@ main_page = """
     }
     /* Set black background color, white text and some padding */
     footer {
-      background-color: #d0d0d0;
+      background-color: #555;
       color: white;
       padding: 15px;
       text-align: center;
+      
+    }
+    footer
+    p
+    a{
+    text-decoration: underline;
+    color: #96d4ec
     }
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
