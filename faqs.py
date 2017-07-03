@@ -80,7 +80,7 @@ a{
     <div class="col-sm-9">
       <hr>
       <h2>Twitch Plays Robotics</h2>
-      <ul>
+      <ul style="display: inline">
       	<li><a href="#project">Project</a></li>
       	<li><a href="#twitch">Twitch</a></li>
       	<li><a href="#robots">Robots</a></li>
@@ -90,15 +90,25 @@ a{
       	<li><a href="#relearning">Reinforcement Learning</a></li>
       </ul>
       
-      <ul>
-      	<li><div id="project">Project</div></li>
-      	<li><div id="twitch">Twitch</div></li>
-      	<li><div id="robots">Robots</div></li>
-      	<li><div id="commands">Commands</div></li>
-      	<li><div id="reinforcements">Reinforcements</div></li>
-      	<li><div id="scores">Scores</div></li>
-      	<li><div id="relearning">Reinforcement Learning</div></li>
-      </ul>
+      <dl>
+      	<dt><div id="project">Project</div></dt>
+      	<dd>					</dd>
+      	<dt><div id="twitch">Twitch</div></dt>
+      	<dd>					</dd>
+      	<dt><div id="robots">Robots</div></dt>
+      	<dd>					</dd>
+      	<dt><div id="commands">Commands</div></dt>
+      	<dd>					</dd>
+      	<dt><div id="reinforcements">Reinforcements</div></dt>
+      	<dd>Reinforcements are typed in the form !C[Y/N], where C is the color of the robot, Y means yes, and N means no.  For example, if you think the red robot is following the command 
+      		properly, you would type "!ry".  If not, you would type "!rn".  					</dd>
+      	<dt><div id="scores">Scores</div></dt>
+      	<dd>Scores in this project are used as a way to gauge user participation and command progress. The higher a user's score, the more they helped in the learning process of the robots.  
+      	The higher a command's score is, the more training the robot has done to learn that command.</dd>
+      	<dt><div id="relearning">Reinforcement Learning</div></dt>
+      	<dd>Reinforcement learning is the main concept behind the evolutionary algorithm used in this project.  To put it simply, it is like training a dog.  You say sit (the command,) 
+      	and when they sit, you give a treat (positive reinforcement.)  The dog will then learn when you say "sit", and they perform the desired action, it will receive food.  </dd>
+      </dl>
     </div>
   </div>
 </div>
