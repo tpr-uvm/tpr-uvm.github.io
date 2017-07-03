@@ -62,6 +62,10 @@ a{
     font-weight: bold;
     color: #111;
     }
+    dt{
+    padding-top: 15px;
+    color: #000;
+    }
   </style>
 </head>
 <body>
@@ -80,7 +84,7 @@ a{
     <div class="col-sm-9">
       <hr>
       <h2>Twitch Plays Robotics</h2>
-      <ul style="display: inline">
+      <ul>
       	<li><a href="#project">Project</a></li>
       	<li><a href="#twitch">Twitch</a></li>
       	<li><a href="#robots">Robots</a></li>
@@ -96,12 +100,13 @@ a{
       	<dt><div id="twitch">Twitch</div></dt>
       	<dd>					</dd>
       	<dt><div id="robots">Robots</div></dt>
-      	<dd>					</dd>
+      	<dd>The robots used were designed using Pyrosim, a python robotics wrapper used with Open Dynamics Engine.</dd>
       	<dt><div id="commands">Commands</div></dt>
-      	<dd>					</dd>
+      	<dd>Commands are given to the robot in the form !commandName, for example "!move" if you would like to vote for jump as the next command. </dd>
       	<dt><div id="reinforcements">Reinforcements</div></dt>
       	<dd>Reinforcements are typed in the form !C[Y/N], where C is the color of the robot, Y means yes, and N means no.  For example, if you think the red robot is following the command 
-      		properly, you would type "!ry".  If not, you would type "!rn".  					</dd>
+      		properly, you would type "!ry".  If not, you would type "!rn".  This will then create a correlation between reinforcements, the command given, and the robot's action, which 
+      		will then improve its behavior over time given enough feedback.</dd>
       	<dt><div id="scores">Scores</div></dt>
       	<dd>Scores in this project are used as a way to gauge user participation and command progress. The higher a user's score, the more they helped in the learning process of the robots.  
       	The higher a command's score is, the more training the robot has done to learn that command.</dd>
