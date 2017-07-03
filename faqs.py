@@ -83,7 +83,7 @@ a{
     </div>
     <div class="col-sm-9">
       <hr>
-      <h2>Twitch Plays Robotics</h2>
+      <h2>FAQs</h2>
       <ul>
       	<li><a href="#project">Project</a></li>
       	<li><a href="#twitch">Twitch</a></li>
