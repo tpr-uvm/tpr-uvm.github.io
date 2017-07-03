@@ -1,9 +1,4 @@
-import datetime
-from database import DATABASE
-
-db = DATABASE()
-
-start = """
+main_page = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +22,7 @@ start = """
       background-color: #555;
       color: white;
       padding: 15px;
-      text-align: center;
+      text-align: center;  
     }
     footer
     p
@@ -46,64 +41,11 @@ start = """
    h2{
 	text-align: center;
 }
- h6{
-	text-align: center;
-}
-table{
-    border: thick solid #000;
-    border-spacing: 0;
-	width: 90%;
-color: #000;
-margin-left: auto;
-margin-right: auto;
-}
-td{
-    border: thin dashed #000;
-    width: 300px;
-    padding: .3em;
-    text-align: center;
-}
-
-th{
-    border-bottom: thin solid #000;
-    width: 300px;
-    padding: .3em;
-	text-align: center;
-}
-tr{
-   
-    width: 300px;
-}
-
-tr:nth-child(odd){
-    background-color: #e2e2e2;
-}
-tr:nth-child(even){
-    background-color: #fff;
-}
-
-
-tr:last-child
-td:nth-child(2){
-  border: none;  
-  
-}
-
-th:nth-child(1){
-width:25px;
-}
-tr:hover{
-color: #111;
-font-weight: bold;
-font-size: 1.2em;
-}
-td:nth-child(1){
-width: 25px;
-text-align: center;
-}
-td{
-text-align: center;
-border: none;
+p{
+margin-left: 7.5%;
+margin-right: 7.5%;
+line-height: 28px;
+font-size: 16px;
 }
 li:hover
 a:hover{
@@ -136,31 +78,26 @@ a{
     </div>
     <div class="col-sm-9">
       <hr>
-      <h2>User Leaderboard</h2>
-      """
-
-start = start + '<h6>Last Updated: ' + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")) + ' EST</h6>'
-table = """
-<table>
-  <tr>
-    <th>Rank</th>
-    <th>Username</th> 
-    <th>Score</th>
-  </tr>
-"""
-users = db.Fetch_Top_Users('all')
-rank = 1
-for i in users:
-
-	table = table + '<tr><td>' + str(rank) + '</td>'
-	table = table + '<td>' + i['userName'] + '</td>'
-	table = table + '<td>' + str(int(i['score'])) + '</td></tr>'
-	rank = rank + 1
-
-table = table + '</table>'
-
-
-end = """
+      <h2>Twitch Plays Robotics</h2>
+      <ul>
+      	<li><a href="#project">Project</a></li>
+      	<li><a href="#twitch">Twitch</a></li>
+      	<li><a href="#robots">Robots</a></li>
+      	<li><a href="#commands">Commands</a></li>
+      	<li><a href="#reinforcements">Reinforcements</a></li>
+      	<li><a href="#scores">Scores</a></li>
+      	<li><a href="#relearning">Reinforcement Learning</a></li>
+      </ul>
+      
+      <ul>
+      	<li><div id="project">Project</div></li>
+      	<li><div id="twitch">Twitch</div></li>
+      	<li><div id="robots">Robots</div></li>
+      	<li><div id="commands">Commands</div></li>
+      	<li><div id="reinforcements">Reinforcements</div></li>
+      	<li><div id="scores">Scores</div></li>
+      	<li><div id="relearning">Reinforcement Learning</div></li>
+      </ul>
     </div>
   </div>
 </div>
@@ -170,8 +107,8 @@ end = """
 </body>
 </html>
 """
-f = open('users.html','w')
-f.write(start + table + end)
+f = open('faqs.html','w')
+f.write(main_page)
 f.close()
 
 

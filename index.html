@@ -73,6 +73,7 @@ a{
         <li><a href="index.html">Home</a></li>
         <li><a href="users.html">Users</a></li>
         <li><a href="cmds.html">Commands</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
       </ul><br>  
     </div>
     <div class="col-sm-9">
