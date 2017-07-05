@@ -87,6 +87,7 @@ a{
       <h5 style=text-align:left; margin-left: 4em;><strong>Contents</strong></h5>
       <ul>
       	<li><a href="#project">Project</a></li>
+      	<li><a href="#team">The Team</a></li>
       	<li><a href="#twitch">Twitch</a></li>
       	<li><a href="#robots">Robots</a></li>
       	<li><a href="#commands">Commands</a></li>
@@ -102,28 +103,32 @@ a{
       		on the next command to teach them, give them feedback on what they are currently learning, say if you like or dislike the current robot, or just watch and see what they do (but we
       		really hope you participate one way or another!)</dd>
       	
-      	<dt><div id="twitch">The Twitch platform</div></dt>
+      	<!---<dt><div id="team">Who is the TPR Team?</div></dt>
+      	<dd>The TPR team consists of three current members: Josh Bongard, Zahra Mahoor, Jack Felag, and one previous member, Joey Anetsberger.</dd>
+      		-->
+      	<dt><div id="twitch">Why are we using Twitch?</div></dt>
       	<dd>The Twitch platform was used for this project for the convenience of it. We (the TPR team,) can broadcast the robots and displays to you, and you can provide feedback in real-time
       		using the chat window.  </dd>
       	
-      	<dt><div id="robots">Robots</div></dt>
+      	<dt><div id="robots">What robots are used in this project?</div></dt>
       	<dd>The robots used were designed using Pyrosim, a python robotics wrapper used with Open Dynamics Engine.  The robots have a plethora of different morphologies, with some mimicking animals,
-      		and others as odd, unnatural shapes.  </dd>
+      		and others as odd, unnatural shapes.  The robot displayed will change every thirty (30) seconds. </dd>
       	
-      	<dt><div id="commands">Commands</div></dt>
+      	<dt><div id="commands">What are commands?</div></dt>
       	<dd>Commands are given to the robot in the form !commandName, for example "!move" if you would like to vote for jump as the next command. At the end of each voting cycle, the command with the 
-      		most votes will be given to the robots to learn.  The users can then provide feedback on that command, and vote for the next command to learn, thus repeating the cycle. </dd>
+      		most votes will be given to the robots to learn.  The users can then provide feedback on that command, and vote for the next command to learn, thus repeating the cycle. The command 
+      		will be changed every three (3) minutes.</dd>
       	
-      	<dt><div id="reinforcements">Reinforcements</div></dt>
+      	<dt><div id="reinforcements">How can I give feedback?</div></dt>
       	<dd>Reinforcements are typed in the form !C[Y/N], where C is the color of the robot, Y means yes, and N means no.  For example, if you think the red robot is following the command 
       		properly, you would type "!ry".  If not, you would type "!rn".  This will then create a correlation between reinforcements, the command given, and the robot's action, which 
       		will then improve its behavior over time given enough feedback.</dd>
       	
-      	<dt><div id="scores">Scores</div></dt>
+      	<dt><div id="scores">What are scores?</div></dt>
       	<dd>Scores in this project are used as a way to gauge user participation and command progress. The higher a user's score, the more they helped in the learning process of the robots.  
       	The higher a command's score is, the more training the robot has done to learn that command.</dd>
       	
-      	<dt><div id="relearning">Reinforcement Learning</div></dt>
+      	<dt><div id="relearning">What is reinforcement learning?</div></dt>
       	<dd>Reinforcement learning is the main concept behind the evolutionary algorithm used in this project.  To put it simply, it is like training a dog.  You say sit (the command,) 
       	and when they sit, you give a treat (positive reinforcement.)  The dog will then learn when you say "sit", and they perform the desired action, it will receive food.  </dd>
       </dl>
