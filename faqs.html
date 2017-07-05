@@ -84,6 +84,7 @@ a{
     <div class="col-sm-9">
       <hr>
       <h2>FAQs</h2>
+      <h5 style=text-align:left; margin-left: 4em;><strong>Contents</strong></h5>
       <ul>
       	<li><a href="#project">Project</a></li>
       	<li><a href="#twitch">Twitch</a></li>
@@ -95,21 +96,33 @@ a{
       </ul>
       
       <dl>
-      	<dt><div id="project">Project</div></dt>
-      	<dd>					</dd>
-      	<dt><div id="twitch">Twitch</div></dt>
-      	<dd>					</dd>
+      	<dt><div id="project">What is this project about?</div></dt>
+      	<dd>This project is called Twitch Plays Robotics (TPR,) and was created by the Morphology, Evolution, and Cognition Lab at the University of Vermont.  The main idea of it is "Can the community 
+      		teach robots natural language?"  It relies on two basic principles: reinforcement learning, and crowdsourcing.  Reinforcement learning is the method of evolution used for the robots in this 			project (which is described in more detail below,) and crowdsourcing is where the community factor ties in. The whole project revolves around you. While watching the robots, you can vote 
+      		on the next command to teach them, give them feedback on what they are currently learning, say if you like or dislike the current robot, or just watch and see what they do (but we
+      		really hope you participate one way or another!)</dd>
+      	
+      	<dt><div id="twitch">The Twitch platform</div></dt>
+      	<dd>The Twitch platform was used for this project for the convenience of it. We (the TPR team,) can broadcast the robots and displays to you, and you can provide feedback in real-time
+      		using the chat window.  </dd>
+      	
       	<dt><div id="robots">Robots</div></dt>
-      	<dd>The robots used were designed using Pyrosim, a python robotics wrapper used with Open Dynamics Engine.</dd>
+      	<dd>The robots used were designed using Pyrosim, a python robotics wrapper used with Open Dynamics Engine.  The robots have a plethora of different morphologies, with some mimicking animals,
+      		and others as odd, unnatural shapes.  </dd>
+      	
       	<dt><div id="commands">Commands</div></dt>
-      	<dd>Commands are given to the robot in the form !commandName, for example "!move" if you would like to vote for jump as the next command. </dd>
+      	<dd>Commands are given to the robot in the form !commandName, for example "!move" if you would like to vote for jump as the next command. At the end of each voting cycle, the command with the 
+      		most votes will be given to the robots to learn.  The users can then provide feedback on that command, and vote for the next command to learn, thus repeating the cycle. </dd>
+      	
       	<dt><div id="reinforcements">Reinforcements</div></dt>
       	<dd>Reinforcements are typed in the form !C[Y/N], where C is the color of the robot, Y means yes, and N means no.  For example, if you think the red robot is following the command 
       		properly, you would type "!ry".  If not, you would type "!rn".  This will then create a correlation between reinforcements, the command given, and the robot's action, which 
       		will then improve its behavior over time given enough feedback.</dd>
+      	
       	<dt><div id="scores">Scores</div></dt>
       	<dd>Scores in this project are used as a way to gauge user participation and command progress. The higher a user's score, the more they helped in the learning process of the robots.  
       	The higher a command's score is, the more training the robot has done to learn that command.</dd>
+      	
       	<dt><div id="relearning">Reinforcement Learning</div></dt>
       	<dd>Reinforcement learning is the main concept behind the evolutionary algorithm used in this project.  To put it simply, it is like training a dog.  You say sit (the command,) 
       	and when they sit, you give a treat (positive reinforcement.)  The dog will then learn when you say "sit", and they perform the desired action, it will receive food.  </dd>
