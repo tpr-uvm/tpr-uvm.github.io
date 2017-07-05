@@ -86,14 +86,14 @@ a{
       <h2>FAQs</h2>
       <h5 style=text-align:left; margin-left: 4em;><strong>Contents</strong></h5>
       <ul>
-      	<li><a href="#project">Project</a></li>
-      	<li><a href="#team">The Team</a></li>
-      	<li><a href="#twitch">Twitch</a></li>
-      	<li><a href="#robots">Robots</a></li>
-      	<li><a href="#commands">Commands</a></li>
-      	<li><a href="#reinforcements">Reinforcements</a></li>
-      	<li><a href="#scores">Scores</a></li>
-      	<li><a href="#relearning">Reinforcement Learning</a></li>
+      	<li><a href="#project">What is this project about?</a></li>
+      	<li><a href="#twitch">Why are we using Twitch?</a></li>
+      	<li><a href="#team">Who is the TPR Team?</a></li>
+      	<li><a href="#robots">What robots are used in this project?</a></li>
+      	<li><a href="#commands">What are commands?</a></li>
+      	<li><a href="#reinforcements">How can I give feedback?</a></li>
+      	<li><a href="#scores">What are scores?</a></li>
+      	<li><a href="#relearning">What is reinforcement learning?</a></li>
       </ul>
       
       <dl>
@@ -103,13 +103,18 @@ a{
       		on the next command to teach them, give them feedback on what they are currently learning, say if you like or dislike the current robot, or just watch and see what they do (but we
       		really hope you participate one way or another!)</dd>
       	
-      	<!---<dt><div id="team">Who is the TPR Team?</div></dt>
-      	<dd>The TPR team consists of three current members: Josh Bongard, Zahra Mahoor, Jack Felag, and one previous member, Joey Anetsberger.</dd>
-      		-->
       	<dt><div id="twitch">Why are we using Twitch?</div></dt>
       	<dd>The Twitch platform was used for this project for the convenience of it. We (the TPR team,) can broadcast the robots and displays to you, and you can provide feedback in real-time
       		using the chat window.  </dd>
-      	
+      		
+      	<dt><div id="team">Who is the TPR Team?</div></dt>
+      	<dd>The TPR team consists of the following three UVM affiliates: 
+      		<ul>
+      			<li>Josh Bongard: Professor, designer and founder of TPR. </li>
+      			<li>Zahra Mahoor: Postdoc, database management and backend.</li>
+      			<li>Jack Felag: Undergraduate student, frontend design and website.</li>
+      		</ul></dd>
+      		
       	<dt><div id="robots">What robots are used in this project?</div></dt>
       	<dd>The robots used were designed using Pyrosim, a python robotics wrapper used with Open Dynamics Engine.  The robots have a plethora of different morphologies, with some mimicking animals,
       		and others as odd, unnatural shapes.  The robot displayed will change every thirty (30) seconds. </dd>
@@ -120,9 +125,9 @@ a{
       		will be changed every three (3) minutes.</dd>
       	
       	<dt><div id="reinforcements">How can I give feedback?</div></dt>
-      	<dd>Reinforcements are typed in the form !C[Y/N], where C is the color of the robot, Y means yes, and N means no.  For example, if you think the red robot is following the command 
-      		properly, you would type "!ry".  If not, you would type "!rn".  This will then create a correlation between reinforcements, the command given, and the robot's action, which 
-      		will then improve its behavior over time given enough feedback.</dd>
+      	<dd>Users can give feedback to the robots through reinforcements.  Reinforcements are typed in the form !C[Y/N], where C is the color of the robot, Y means yes, and N means no.  
+      		For example, if you think the red robot is following the command properly, you would type "!ry".  If not, you would type "!rn".  This will then create a correlation between 
+      		reinforcements, the command given, and the robot's action, which will then improve its behavior over time given enough feedback.</dd>
       	
       	<dt><div id="scores">What are scores?</div></dt>
       	<dd>Scores in this project are used as a way to gauge user participation and command progress. The higher a user's score, the more they helped in the learning process of the robots.  
@@ -131,7 +136,9 @@ a{
       	<dt><div id="relearning">What is reinforcement learning?</div></dt>
       	<dd>Reinforcement learning is the main concept behind the evolutionary algorithm used in this project.  To put it simply, it is like training a dog.  You say sit (the command,) 
       	and when they sit, you give a treat (positive reinforcement.)  The dog will then learn when you say "sit", and they perform the desired action, it will receive food.  </dd>
+      	
       </dl>
+      
     </div>
   </div>
 </div>
