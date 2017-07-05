@@ -92,10 +92,8 @@ td:nth-child(2){
 th:nth-child(1){
 width:25px;
 }
-tr:hover{
-color: #111;
+tr:nth-child(n+1):hover{
 font-weight: bold;
-font-size: 1.2em;
 }
 td:nth-child(1){
 width: 25px;
