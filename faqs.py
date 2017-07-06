@@ -110,9 +110,9 @@ a{
       	<dt><div id="team">Who is the TPR Team?</div></dt>
       	<dd>The TPR team consists of the following three UVM affiliates: 
       		<ul>
-      			<li>Josh Bongard: Professor, designer and founder of TPR. </li>
-      			<li>Zahra Mahoor: Postdoc, database management and backend.</li>
-      			<li>Jack Felag: Undergraduate student, frontend design and website.</li>
+      			<li>Josh Bongard: Professor, head of TPR, engineering and design. </li>
+      			<li>Zahra Mahoor: Postdoc, database management and backend development.</li>
+      			<li>Jack Felag: Undergraduate student, front-end development and website.</li>
       		</ul></dd>
       		
       	<dt><div id="robots">What robots are used in this project?</div></dt>
