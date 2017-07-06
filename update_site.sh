@@ -1,5 +1,5 @@
 #! /bin/sh
-cd ~/Desktop/tprInfo
+cd ~/Desktop/tpr
 echo 'path set'
 python site.py && echo 'main page updated'
 python faqs.py && echo 'FAQ page updated'
