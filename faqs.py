@@ -116,7 +116,7 @@ a{
       		</ul></dd>
       		
       	<dt><div id="robots">What robots are used in this project?</div></dt>
-      	<dd>The robots used were designed using Pyrosim, a python robotics wrapper used with Open Dynamics Engine.  The robots have a plethora of different morphologies, with some mimicking animals,
+      	<dd>The robots used were designed using pyrosim, a python robotics wrapper used with Open Dynamics Engine.  The robots have a plethora of different morphologies, with some mimicking animals,
       		and others as odd, unnatural shapes.  The robot displayed will change every thirty (30) seconds. </dd>
       	
       	<dt><div id="commands">What are commands?</div></dt>
