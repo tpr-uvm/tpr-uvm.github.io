@@ -95,6 +95,7 @@ width:25px;
 tr:nth-child(n+1):hover{
 font-weight: bold;
 }
+
 td:nth-child(1){
 width: 25px;
 text-align: center;
