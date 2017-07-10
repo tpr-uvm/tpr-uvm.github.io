@@ -75,6 +75,7 @@ a{
         <li><a href="users.html">Users</a></li>
         <li><a href="cmds.html">Commands</a></li>
         <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="consent.html">Consent Form</a></li>
       </ul><br>  
     </div>
     <div class="col-sm-9">
