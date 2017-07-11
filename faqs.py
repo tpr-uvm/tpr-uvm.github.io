@@ -127,13 +127,11 @@ a{
       	<dt><div id="whatcommands">What commands are available?</div></dt>
       	<dd>It’s up to you: there are no prespecified commands we wish to teach the robots. You can generate a vote for any command you like simply by typing ![command]. The full list of commands issued by the crowd so far is available here.</dd>
       	
-      	<dt><div id="robots">What robots are used in this project?</div><dt>
-      	<dd>As you’ll notice, the bodies and behaviors of the robots are all different. Indeed, what we wish to discover it not just which commands the robots can learn, but which robots are able to learn more command than others. When a robots spawns an offspring robot, the offspring has a slightly different morphology and/or behavior from its parent. Also, every hour, a new robot is “injected” into the population. Thus, like commands, there are no-prespecified robots. 
-      	</dd>
+      	<dt><div id="robots">What robots are used in this project?</div></dt>
+      	<dd>As you’ll notice, the bodies and behaviors of the robots are all different. Indeed, what we wish to discover it not just which commands the robots can learn, but which robots are able to learn more command than others. When a robots spawns an offspring robot, the offspring has a slightly different morphology and/or behavior from its parent. Also, every hour, a new robot is “injected” into the population. Thus, like commands, there are no-prespecified robots. </dd>
       	
-      	<dt><div id="twitch">Why are we using Twitch?</div><dt>
-      	<dd>Twitch is ideal for our project because it supports bidirectional communication. You can easily speak to the robots, and the robots can show you which commands they’ve learned by obeying, or failing to obey, the current command.
-      	</dd>
+      	<dt><div id="twitch">Why are we using Twitch?</div></dt>
+      	<dd>Twitch is ideal for our project because it supports bidirectional communication. You can easily speak to the robots, and the robots can show you which commands they’ve learned by obeying, or failing to obey, the current command.</dd>
       	
       	<dt><div id="team">Who is the TPR Team?</div></dt>
       	<dd>We’re based at the University of Vermont and we are...
@@ -143,11 +141,11 @@ a{
       			<li>Jack Felag: Undergraduate student, front-end development and website. 		</li>
       		</ul></dd>
       		
-      	<dt><div id="myscore">How is my score calculated?</div><dt>
+      	<dt><div id="myscore">How is my score calculated?</div></dt>
       	<dd>Users collect points by helping the robots to learn. More specifically: if you propose a command that robots subsequent learn, you get more points. More technically: your score is a function of how many yes’s were provided by other users, under commands that you proposed or voted for.
       	</dd>
       	
-      	<dt><div id="cmdscore">How are command scores calculated?</div><dt>
+      	<dt><div id="cmdscore">How are command scores calculated?</div></dt>
       	<dd>The higher a command’s score, the better that command has been learned by the robots. More specifically, if a command collects increasing numbers of yes’s as time passes, that command receives more points. It’s the rate of increase in yes’s that’s important: a command that always collects yes’s --- such as !be a robot --- will receive a low score.
       	</dd>
       	
@@ -158,7 +156,7 @@ a{
       			<li>Josh gave a <a href="https://www.youtube.com/watch?v=vzND2qKGKAk">lecture</a> about it at the ALife conference in 2016.	</li>
       		</ul></dd>
       	
-      		<dt><div id="abuse">Why can't I swear on your stream?</div><dt>
+      		<dt><div id="abuse">Why can't I swear on your stream?</div></dt>
       	<dd>This is a publicly-funded scientific experiment. Thus, we maintain a <strong>zero-tolerance abuse policy:</strong> users who attempt to abuse the site or other users will be banned upon their first offence.
       	</dd>
       	
