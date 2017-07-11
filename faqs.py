@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 main_page = """
 <!DOCTYPE html>
 <html lang="en">
@@ -108,33 +106,33 @@ a{
       
       <dl>
       	<dt><div id="project">What is this project about?</div></dt>
-      	<dd>Twitch Plays Robotics (TPR) is, in effect, a “school” for robots. Here, robots attempt to learn the meaning of words; you act as the teacher by helping them to learn. However, learning goes both ways: We are not sure what words these robots can learn; it is your job to figure that out.</dd>
+      	<dd>Twitch Plays Robotics (TPR) is, in effect, a "school" for robots. Here, robots attempt to learn the meaning of words; you act as the teacher by helping them to learn. However, learning goes both ways: We are not sure what words these robots can learn; it is your job to figure that out.</dd>
       	
       	<dt><div id="teach">How do I teach the robots?</div></dt>
-      	<dd>Think of the robots as pets. If you want to teach your pet something, you issue a command to it like “sit”. You then give your pet a treat if it obeys and withhold a treat if it doesn’t. Here in TPR, if the robot is obeying the current command, you type in the robot’s color and ‘y’ for ‘yes’ (this is equivalent to giving the robot a treat). If you think the robot is not obeying the current command, type its color and then ‘n’ for ‘no’ (this is equivalent to withholding a treat from the robot).
+      	<dd>Think of the robots as pets. If you want to teach your pet something, you issue a command to it like "sit". You then give your pet a treat if it obeys and withhold a treat if it doesn't. Here in TPR, if the robot is obeying the current command, you type in the robot's color and 'y' for 'yes' (this is equivalent to giving the robot a treat). If you think the robot is not obeying the current command, type its color and then 'n' for 'no' (this is equivalent to withholding a treat from the robot).
  </dd>
       		
       	<dt><div id="commands">What are commands?</div></dt>
-      	<dd>Here in TPR, you can vote on which command to teach the robots next simply by typing ![command], where [command] is one or more English words. Every three minutes, the most voted-on command is issued to the robots. Each robot over the next three minutes “hears” this command.
+      	<dd>Here in TPR, you can vote on which command to teach the robots next simply by typing ![command], where [command] is one or more English words. Every three minutes, the most voted-on command is issued to the robots. Each robot over the next three minutes "hears" this command.
 </dd>
       	
       	<dt><div id="learn">How do the robots learn?</div></dt>
-      	<dd>At any one time, there is a population of robots, and one after the other is shown to the crowd. Over time, robots collect yes and no votes, as well as likes and dislikes, from the crowd. Periodically, robots that are less obedient (many no’s and few yes’s) and less popular (many dislikes and few likes) are deleted. They are replaced by randomly-modified copies of the more obedient and popular robots. Thus, the robots evolve rather than learn to become more obedient.</dd>
+      	<dd>At any one time, there is a population of robots, and one after the other is shown to the crowd. Over time, robots collect yes and no votes, as well as likes and dislikes, from the crowd. Periodically, robots that are less obedient (many no's and few yes's) and less popular (many dislikes and few likes) are deleted. They are replaced by randomly-modified copies of the more obedient and popular robots. Thus, the robots evolve rather than learn to become more obedient.</dd>
       	
       	<dt><div id="liking">Why should I like (or dislike) a robot?</div></dt>
-      	<dd>As mentioned above, a disobedient robot may “die”. However, despite its disobedience, the robot may act in an interesting, funny, or it may exhibit the potential to learn other commands (for example, it may have jumped when the command was ‘do not jump’). By ‘liking’ a robot, you can decrease the probability that it will be killed.</dd>
+      	<dd>As mentioned above, a disobedient robot may "die". However, despite its disobedience, the robot may act in an interesting, funny, or it may exhibit the potential to learn other commands (for example, it may have jumped when the command was 'do not jump'). By 'liking' a robot, you can decrease the probability that it will be killed.</dd>
       	
       	<dt><div id="whatcommands">What commands are available?</div></dt>
-      	<dd>It’s up to you: there are no prespecified commands we wish to teach the robots. You can generate a vote for any command you like simply by typing ![command]. The full list of commands issued by the crowd so far is available <a href="cmds.html">here.</a></dd>
+      	<dd>It's up to you: there are no prespecified commands we wish to teach the robots. You can generate a vote for any command you like simply by typing ![command]. The full list of commands issued by the crowd so far is available <a href="cmds.html">here.</a></dd>
       	
       	<dt><div id="robots">What robots are used in this project?</div></dt>
-      	<dd>As you’ll notice, the bodies and behaviors of the robots are all different. Indeed, what we wish to discover it not just which commands the robots can learn, but which robots are able to learn more command than others. When a robots spawns an offspring robot, the offspring has a slightly different morphology and/or behavior from its parent. Also, every hour, a new robot is “injected” into the population. Thus, like commands, there are no-prespecified robots. </dd>
+      	<dd>As you'll notice, the bodies and behaviors of the robots are all different. Indeed, what we wish to discover it not just which commands the robots can learn, but which robots are able to learn more command than others. When a robots spawns an offspring robot, the offspring has a slightly different morphology and/or behavior from its parent. Also, every hour, a new robot is "injected" into the population. Thus, like commands, there are no-prespecified robots. </dd>
       	
       	<dt><div id="twitch">Why are we using Twitch?</div></dt>
-      	<dd>Twitch is ideal for our project because it supports bidirectional communication. You can easily speak to the robots, and the robots can show you which commands they’ve learned by obeying, or failing to obey, the current command.</dd>
+      	<dd>Twitch is ideal for our project because it supports bidirectional communication. You can easily speak to the robots, and the robots can show you which commands they've learned by obeying, or failing to obey, the current command.</dd>
       	
       	<dt><div id="team">Who is the TPR Team?</div></dt>
-      	<dd>We’re based at the University of Vermont and we are...
+      	<dd>We're based at the University of Vermont and we are...
       		<ul>
       			<li>Josh Bongard: Professor of computer science and team lead. 				</li>
       			<li>Zahra Mahoor: Postdoctoral associate, database management and backend development.	</li>
@@ -142,11 +140,11 @@ a{
       		</ul></dd>
       		
       	<dt><div id="myscore">How is my score calculated?</div></dt>
-      	<dd>Users collect points by helping the robots to learn. More specifically: if you propose a command that robots subsequent learn, you get more points. More technically: your score is a function of how many yes’s were provided by other users, under commands that you proposed or voted for.
+      	<dd>Users collect points by helping the robots to learn. More specifically: if you propose a command that robots subsequent learn, you get more points. More technically: your score is a function of how many yes's were provided by other users, under commands that you proposed or voted for.
       	</dd>
       	
       	<dt><div id="cmdscore">How are command scores calculated?</div></dt>
-      	<dd>The higher a command’s score, the better that command has been learned by the robots. More specifically, if a command collects increasing numbers of yes’s as time passes, that command receives more points. It’s the rate of increase in yes’s that’s important: a command that always collects yes’s --- such as !be a robot --- will receive a low score.
+      	<dd>The higher a command's score, the better that command has been learned by the robots. More specifically, if a command collects increasing numbers of yes's as time passes, that command receives more points. It's the rate of increase in yes's that's important: a command that always collects yes's --- such as !be a robot --- will receive a low score.
       	</dd>
       	
       	<dt><div id="more">Where can I learn more?</div></dt>
