@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 main_page = """
 <!DOCTYPE html>
 <html lang="en">
