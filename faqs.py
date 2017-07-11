@@ -87,56 +87,86 @@ a{
       <h2>FAQs</h2>
       <h5 style=text-align:left; margin-left: 4em;><strong>Contents</strong></h5>
       <ul>
-      	<li><a href="#project">What is this project about?</a></li>
-      	<li><a href="#twitch">Why are we using Twitch?</a></li>
-      	<li><a href="#team">Who is the TPR Team?</a></li>
-      	<li><a href="#robots">What robots are used in this project?</a></li>
-      	<li><a href="#commands">What are commands?</a></li>
-      	<li><a href="#reinforcements">How can I give feedback?</a></li>
-      	<li><a href="#scores">What are scores?</a></li>
-      	<li><a href="#relearning">What is reinforcement learning?</a></li>
+      	<li><a href="#project">What is this project about?			</a></li>
+      	<li><a href="#teach">How do I teach the robots?				</a></li>
+      	<li><a href="#commands">What are commands?				</a></li>
+      	<li><a href="#learn">How do the robots learn?				</a></li>
+      	<li><a href="#liking">Why should I like (or dislike) a robot?		</a></li>
+      	<li><a href="#whatcommands">What commands are available?		</a></li>
+      	<li><a href="#robots">What robots are used in this project?		</a></li>
+      	<li><a href="#twitch">Why are we using Twitch?				</a></li>
+      	<li><a href="#team">Who is the TPR Team?				</a></li>
+      	<li><a href="#myscore">How is my score calculated?			</a></li>
+      	<li><a href="#cmdscore">How are command scores calculated? 		</a></li>
+      	<li><a href="#more">Where can I learn more?  				</a></li>
+      	<li><a href="#abuse">Why can't I swear on your stream? 			</a></li>
+      	<li><a href="#realpeople">I'd like to speak to an operator.		</a></li>
+      	<!--- <li><a href="# ">  </a></li> --->
       </ul>
       
       <dl>
       	<dt><div id="project">What is this project about?</div></dt>
-      	<dd>This project is called Twitch Plays Robotics (TPR,) and was created by the Morphology, Evolution, and Cognition Lab at the University of Vermont.  The main idea of it is "Can the community 
-      		teach robots natural language?"  It relies on two basic principles: reinforcement learning, and crowdsourcing.  Reinforcement learning is the method of evolution used for the robots in this 			project (which is described in more detail below,) and crowdsourcing is where the community factor ties in. The whole project revolves around you. While watching the robots, you can vote 
-      		on the next command to teach them, give them feedback on what they are currently learning, say if you like or dislike the current robot, or just watch and see what they do (but we
-      		really hope you participate one way or another!)</dd>
+      	<dd>Twitch Plays Robotics (TRP) is, in effect, a “school” for robots. Here, robots attempt to learn the meaning of words; you act as the teacher by helping them to learn. However, learning goes both ways: We are not sure what words these robots can learn; it is your job to figure that out.</dd>
       	
-      	<dt><div id="twitch">Why are we using Twitch?</div></dt>
-      	<dd>The Twitch platform was used for this project for the convenience of it. We (the TPR team,) can broadcast the robots and displays to you, and you can provide feedback in real-time
-      		using the chat window.  </dd>
+      	<dt><div id="teach">How do I teach the robots?</div></dt>
+      	<dd>Think of the robots as pets. If you want to teach your pet something, you issue a command to it like “sit”. You then give your pet a treat if it obeys and withhold a treat if it doesn’t. Here in TPR, if the robot is obeying the current command, you type in the robot’s color and ‘y’ for ‘yes’ (this is equivalent to giving the robot a treat). If you think the robot is not obeying the current command, type its color and then ‘n’ for ‘no’ (this is equivalent to withholding a treat from the robot).
+ </dd>
       		
+      	<dt><div id="commands">What are commands?</div></dt>
+      	<dd>Here in TPR, you can vote on which command to teach the robots next simply by typing ![command], where [command] is one or more English words. Every three minutes, the most voted-on command is issued to the robots. Each robot over the next three minutes “hears” this command.
+</dd>
+      	
+      	<dt><div id="learn">How do the robots learn?</div></dt>
+      	<dd>At any one time, there is a population of robots, and one after the other is shown to the crowd. Over time, robots collect yes and no votes, as well as likes and dislikes, from the crowd. Periodically, robots that are less obedient (many no’s and few yes’s) and less popular (many dislikes and few likes) are deleted. They are replaced by randomly-modified copies of the more obedient and popular robots. Thus, the robots evolve rather than learn to become more obedient.</dd>
+      	
+      	<dt><div id="liking">Why should I like (or dislike) a robot?</div></dt>
+      	<dd>As mentioned above, a disobedient robot may “die”. However, despite its disobedience, the robot may act in an interesting, funny, or it may exhibit the potential to learn other commands (for example, it may have jumped when the command was ‘do not jump’). By ‘liking’ a robot, you can decrease the probability that it will be killed.</dd>
+      	
+      	<dt><div id="whatcommands">What commands are available?</div></dt>
+      	<dd>It’s up to you: there are no prespecified commands we wish to teach the robots. You can generate a vote for any command you like simply by typing ![command]. The full list of commands issued by the crowd so far is available here.</dd>
+      	
+      	<dt><div id="robots">What robots are used in this project?</div><dt>
+      	<dd>As you’ll notice, the bodies and behaviors of the robots are all different. Indeed, what we wish to discover it not just which commands the robots can learn, but which robots are able to learn more command than others. When a robots spawns an offspring robot, the offspring has a slightly different morphology and/or behavior from its parent. Also, every hour, a new robot is “injected” into the population. Thus, like commands, there are no-prespecified robots. 
+      	</dd>
+      	
+      	<dt><div id="twitch">Why are we using Twitch?</div><dt>
+      	<dd>Twitch is ideal for our project because it supports bidirectional communication. You can easily speak to the robots, and the robots can show you which commands they’ve learned by obeying, or failing to obey, the current command.
+      	</dd>
+      	
       	<dt><div id="team">Who is the TPR Team?</div></dt>
-      	<dd>The TPR team consists of the following three UVM affiliates: 
+      	<dd>We’re based at the University of Vermont and we are...
       		<ul>
-      			<li>Josh Bongard: Professor, head of TPR, engineering and design. </li>
-      			<li>Zahra Mahoor: Postdoc, database management and backend development.</li>
-      			<li>Jack Felag: Undergraduate student, front-end development and website.</li>
+      			<li>Josh Bongard: Professor of computer science and team lead. 				</li>
+      			<li>Zahra Mahoor: Postdoctoral associate, database management and backend development.	</li>
+      			<li>Jack Felag: Undergraduate student, front-end development and website. 		</li>
       		</ul></dd>
       		
-      	<dt><div id="robots">What robots are used in this project?</div></dt>
-      	<dd>The robots used were designed using pyrosim, a python robotics wrapper used with Open Dynamics Engine.  The robots have a plethora of different morphologies, with some mimicking animals,
-      		and others as odd, unnatural shapes.  The robot displayed will change every thirty (30) seconds. </dd>
+      	<dt><div id="myscore">How is my score calculated?</div><dt>
+      	<dd>Users collect points by helping the robots to learn. More specifically: if you propose a command that robots subsequent learn, you get more points. More technically: your score is a function of how many yes’s were provided by other users, under commands that you proposed or voted for.
+      	</dd>
       	
-      	<dt><div id="commands">What are commands?</div></dt>
-      	<dd>Commands are given to the robot in the form !commandName, for example "!move" if you would like to vote for jump as the next command. At the end of each voting cycle, the command with the 
-      		most votes will be given to the robots to learn.  The users can then provide feedback on that command, and vote for the next command to learn, thus repeating the cycle. The command 
-      		will be changed every three (3) minutes.</dd>
+      	<dt><div id="cmdscore">How are command scores calculated?</div><dt>
+      	<dd>The higher a command’s score, the better that command has been learned by the robots. More specifically, if a command collects increasing numbers of yes’s as time passes, that command receives more points. It’s the rate of increase in yes’s that’s important: a command that always collects yes’s --- such as !be a robot --- will receive a low score.
+      	</dd>
       	
-      	<dt><div id="reinforcements">How can I give feedback?</div></dt>
-      	<dd>Users can give feedback to the robots through reinforcements.  Reinforcements are typed in the form !C[Y/N], where C is the color of the robot, Y means yes, and N means no.  
-      		For example, if you think the red robot is following the command properly, you would type "!ry".  If not, you would type "!rn".  This will then create a correlation between 
-      		reinforcements, the command given, and the robot's action, which will then improve its behavior over time given enough feedback.</dd>
+      	<dt><div id="more">Where can I learn more?</div></dt>
+      	<dd><ul>
+      			<li>We published a <a href="http://www.cs.uvm.edu/~jbongard/papers/2016_ALife_Anetsberger.pdf">paper,</a> after we launched TPR v1.0 (this is v2.0).</li>
+      			<li>There is also a <a href="https://www.reddit.com/r/artificial/comments/3qpm87/twitch_plays_robotics/">reddit conversation thread</a> that grew up around TPR v1.0.</li>
+      			<li>Josh gave a <a href="https://www.youtube.com/watch?v=vzND2qKGKAk">lecture</a> about it at the ALife conference in 2016.	</li>
+      		</ul></dd>
       	
-      	<dt><div id="scores">What are scores?</div></dt>
-      	<dd>Scores in this project are used as a way to gauge user participation and command progress. The higher a user's score, the more they helped in the learning process of the robots.  
-      	The higher a command's score is, the more training the robot has done to learn that command.</dd>
+      		<dt><div id="abuse">Why can't I swear on your stream?</div><dt>
+      	<dd>This is a publicly-funded scientific experiment. Thus, we maintain a <strong>zero-tolerance abuse policy:</strong> users who attempt to abuse the site or other users will be banned upon their first offence.
+      	</dd>
       	
-      	<dt><div id="relearning">What is reinforcement learning?</div></dt>
-      	<dd>Reinforcement learning is the main concept behind the evolutionary algorithm used in this project.  To put it simply, it is like training a dog.  You say sit (the command,) 
-      	and when they sit, you give a treat (positive reinforcement.)  The dog will then learn when you say "sit", and they perform the desired action, it will receive food.  </dd>
+      	
+      	<dt><div id="realpeople">I'd like to speak to an operator.</div></dt>
+      	<dd><ul>
+      			<li>Jack Felag will be available on stream (chat only) 11am-1pm ET Monday through Friday</li>
+      			<li>Zahra Mahoor will be available on stream (chat only) 1-3pm ET Monday through Friday.</li>
+      			<li>Josh Bongard will be available on stream 3-5pm ET Monday through Friday.</li>
+      		</ul></dd>
       	
       </dl>
       
