@@ -52,7 +52,11 @@ a:hover{
 font-weight: bold;
 background-color: #e2e2e2;
 }
-
+.nav
+li
+a{
+color: #111;
+}
 .nav
 li
 {
