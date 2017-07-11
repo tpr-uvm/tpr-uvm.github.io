@@ -1,8 +1,8 @@
-main_page = """
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Twitch Plays Robotics</title>
+  <title>Abuse Policy</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -52,6 +52,7 @@ a:hover{
 font-weight: bold;
 background-color: #e2e2e2;
 }
+
 .nav
 li
 {
@@ -83,6 +84,10 @@ li
     a:hover{
     background-color: #00ff00;
     }
+    dt{
+    padding-top: 15px;
+    color: #000;
+    }
   </style>
 </head>
 <body>
@@ -92,19 +97,23 @@ li
 <img src="TPR.png" class="img-responsive" style="width: 90%; margin-right:auto; margin-left:auto; margin-top: 1em;" alt="TPR Logo">
       <h4>Menu</h4>
       <ul class="nav nav-pills nav-stacked">
-        <li><a href="consent.html">Play TPR!</a></li>
-        <li><a href="index.html">Home</a></li>
+        <li class="button1"><a href="index.html">Home</a></li>
         <li><a href="users.html">Users</a></li>
         <li><a href="cmds.html">Commands</a></li>
         <li><a href="faqs.html">FAQs</a></li>
-        <li><a href="abusepolicy.html">Abuse Policy</a></li>
+        <li><a href="consent.html">Consent Form</a></li>
       </ul><br>  
     </div>
     <div class="col-sm-9">
       <hr>
-      <h2>Twitch Plays Robotics</h2>
-      <p>&emsp;&emsp; Twitch Plays Robotics (TPR,) is a community-driven project to teach robots language.  Using the <a href="https://www.twitch.tv">Twitch</a> platform, simulated robots are broadcasted to users around the world.  They can then give feedback in the chat window, which is grabbed by automated processes which then filters the data, and gives the proper information to an evolutionary algorithm to improve the robots' behaviors.  Contribute <a href="https://www.twitch.tv/mungozero">here.</a></p>
-<p>&emsp;&emsp; This project is based out of the University of Vermont (Vermont, USA.)
+      <h2>Abuse Policy</h2>
+      
+      <dl>
+   	<dt>Why can't I swear on your stream?</dt>
+      	<dd>This is a publicly-funded scientific experiment. Thus, we maintain a <strong>zero-tolerance abuse policy:</strong> users who attempt to abuse the site or other users will be banned upon their first offence.
+      	</dd>
+      </dl>
+      
     </div>
   </div>
 </div>
@@ -113,9 +122,3 @@ li
 </footer>
 </body>
 </html>
-"""
-f = open('index.html','w')
-f.write(main_page)
-f.close()
-
-

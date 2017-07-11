@@ -109,14 +109,36 @@ a:hover{
 font-weight: bold;
 background-color: #e2e2e2;
 }
+.nav
 li
-a{
+{
 -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
     text-align: center;
     font-weight: bold;
     color: #111;
+   
+    }
+    li.button1{
+
+    background-color: #00ff00;
+    }
+    
+    .nav
+    li:hover
+{
+-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-align: center;
+    font-weight: bold;
+    color: #111;
+   
+    }
+    li.button1
+    a:hover{
+    background-color: #00ff00;
     }
   </style>
 </head>
@@ -127,11 +149,12 @@ a{
 <img src="TPR.png" class="img-responsive" style="width: 90%; margin-right:auto; margin-left:auto; margin-top: 1em;" alt="TPR Logo">
       <h4>Menu</h4>
       <ul class="nav nav-pills nav-stacked">
+        <li><a href="consent.html">Play TPR!</a></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="users.html">Users</a></li>
         <li><a href="cmds.html">Commands</a></li>
         <li><a href="faqs.html">FAQs</a></li>
-        <li><a href="consent.html">Consent Form</a></li>
+        <li><a href="abusepolicy.html">Abuse Policy</a></li>
       </ul><br>  
     </div>
     <div class="col-sm-9">
