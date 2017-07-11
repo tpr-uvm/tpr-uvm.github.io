@@ -106,7 +106,7 @@ a{
       
       <dl>
       	<dt><div id="project">What is this project about?</div></dt>
-      	<dd>Twitch Plays Robotics (TRP) is, in effect, a “school” for robots. Here, robots attempt to learn the meaning of words; you act as the teacher by helping them to learn. However, learning goes both ways: We are not sure what words these robots can learn; it is your job to figure that out.</dd>
+      	<dd>Twitch Plays Robotics (TPR) is, in effect, a “school” for robots. Here, robots attempt to learn the meaning of words; you act as the teacher by helping them to learn. However, learning goes both ways: We are not sure what words these robots can learn; it is your job to figure that out.</dd>
       	
       	<dt><div id="teach">How do I teach the robots?</div></dt>
       	<dd>Think of the robots as pets. If you want to teach your pet something, you issue a command to it like “sit”. You then give your pet a treat if it obeys and withhold a treat if it doesn’t. Here in TPR, if the robot is obeying the current command, you type in the robot’s color and ‘y’ for ‘yes’ (this is equivalent to giving the robot a treat). If you think the robot is not obeying the current command, type its color and then ‘n’ for ‘no’ (this is equivalent to withholding a treat from the robot).
