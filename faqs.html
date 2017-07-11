@@ -97,7 +97,7 @@ li
 <img src="TPR.png" class="img-responsive" style="width: 90%; margin-right:auto; margin-left:auto; margin-top: 1em;" alt="TPR Logo">
       <h4>Menu</h4>
       <ul class="nav nav-pills nav-stacked">
-      	<li><a href="consent.html">Play TPR!</a></li>
+      	<li class="button1"><a href="consent.html">Play TPR!</a></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="users.html">Users</a></li>
         <li><a href="cmds.html">Commands</a></li>
