@@ -110,7 +110,7 @@ li
       <h2>Twitch Plays Robotics</h2>
       <p>&emsp;&emsp; Twitch Plays Robotics (TPR) is a community-driven project to teach robots language. It is funded by the National Science Foundation and is run by a research team at the University of Vermont. You can start playing TPR right now by clicking <a href="www.twitch.tv/twitchplaysrobotics">here</a> or watching the following video.</p>
       
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/jhgmPKJ2q-4" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" style="display:block; margin:0 auto;" src="https://www.youtube.com/embed/jhgmPKJ2q-4" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 
