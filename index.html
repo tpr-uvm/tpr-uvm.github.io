@@ -108,10 +108,10 @@ li
     <div class="col-sm-9">
       <hr>
       <h2>Twitch Plays Robotics</h2>
-      <p>&emsp;&emsp; Twitch Plays Robotics (TPR) is a community-driven project to teach robots language. It is funded by the National Science Foundation and is run by a research team at the University of Vermont. You can starting playing TPR right now by clicking <a href="www.twitch.tv/twitchplaysrobotics>here</a> or watching the following video.</a></p>
+      <p>&emsp;&emsp; Twitch Plays Robotics (TPR) is a community-driven project to teach robots language. It is funded by the National Science Foundation and is run by a research team at the University of Vermont. You can starting playing TPR right now by clicking <a href="www.twitch.tv/twitchplaysrobotics">here</a> or watching the following video.</p>
     </div>
   </div>
-</div>
+
 <footer class="container-fluid">
   <p><a href="https://www.meclab.org">Morphology, Evolution, Cognition Lab</a></p>
 </footer>
