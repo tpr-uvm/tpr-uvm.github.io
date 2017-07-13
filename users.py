@@ -174,8 +174,8 @@ table = """
     <th>Rank</th>
     <th>Username</th> 
     <th>Score</th>
-    <th>#Commands</th>
-    <th>#Reinforcements</th>
+    <th><a href="faqs.html#commands">#Commands</a></th>
+    <th><a href="faqs.html#teach">#Reinforcements</a></th>
   </tr>
 """
 users = db.Fetch_Top_Users('all')
