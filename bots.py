@@ -1,8 +1,13 @@
+import datetime
+from database import DATABASE
 
+db = DATABASE()
+
+start = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Leaderboard</title>
+  <title>Robots</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -90,7 +95,6 @@ width:25px;
 tr:nth-child(n+1):hover{
 font-weight: bold;
 }
-
 td:nth-child(1){
 width: 25px;
 text-align: center;
@@ -149,7 +153,7 @@ li
 <img src="TPR.png" class="img-responsive" style="width: 90%; margin-right:auto; margin-left:auto; margin-top: 1em;" alt="TPR Logo">
       <h4>Menu</h4>
       <ul class="nav nav-pills nav-stacked">
-       <li class="button1"><a href="consent.html">Play TPR!</a></li>
+        <li class="button1"><a href="consent.html">Play TPR!</a></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="users.html">Users</a></li>
         <li><a href="cmds.html">Commands</a></li>
@@ -159,17 +163,31 @@ li
     </div>
     <div class="col-sm-9">
       <hr>
-      <h2>User Leaderboard</h2>
-      <h6>Last Updated: 2017-07-13 12:02 EST</h6>
+      <h2>Command Information</h2>
+      """
+
+start = start + '<h6>Last Updated: ' + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")) + ' EST</h6>'
+table = """
 <table>
   <tr>
     <th>Rank</th>
-    <th>Username</th> 
+    <th>Command</th> 
     <th>Score</th>
-    <th>#Commands</th>
-    <th>#Reinforcements</th>
   </tr>
-<tr><td>1</td><td>promanev</td><td>129</td><td>38</td><td>44</td></tr><tr><td>2</td><td>jfelag</td><td>100</td><td>409</td><td>345</td></tr><tr><td>3</td><td>zmahoor</td><td>90</td><td>449</td><td>357</td></tr><tr><td>4</td><td>doctorjoshuvm</td><td>64</td><td>390</td><td>294</td></tr><tr><td>5</td><td>jusvankaas</td><td>60</td><td>16</td><td>20</td></tr><tr><td>6</td><td>cfusting1</td><td>57</td><td>15</td><td>22</td></tr><tr><td>7</td><td>abernatskiy</td><td>46</td><td>380</td><td>338</td></tr><tr><td>8</td><td>jauerb</td><td>36</td><td>19</td><td>13</td></tr><tr><td>9</td><td>krystalleger</td><td>12</td><td>395</td><td>332</td></tr><tr><td>10</td><td>kriegmerica</td><td>8</td><td>6</td><td>2</td></tr><tr><td>11</td><td>ccappelle</td><td>8</td><td>389</td><td>268</td></tr><tr><td>12</td><td>cfusting</td><td>0</td><td>404</td><td>311</td></tr><tr><td>13</td><td>jsmith</td><td>0</td><td>422</td><td>281</td></tr><tr><td>14</td><td>dwood</td><td>0</td><td>367</td><td>305</td></tr><tr><td>15</td><td>roman.popov</td><td>0</td><td>400</td><td>311</td></tr><tr><td>16</td><td>samk</td><td>0</td><td>381</td><td>316</td></tr><tr><td>17</td><td>sijmen</td><td>0</td><td>361</td><td>317</td></tr><tr><td>18</td><td>marcin</td><td>0</td><td>411</td><td>312</td></tr></table>
+"""
+commands = db.Fetch_Topn_Unique_Commands('all')
+rank = 1
+for i in commands:
+
+	table = table + '<tr><td>' + str(rank) + '</td>'
+	table = table + '<td>' + i['cmd'] + '</td>'
+	table = table + '<td>' + str(int(i['score'])) + '</td></tr>'
+	rank = rank + 1
+
+table = table + '</table>'
+
+
+end = """
     </div>
   </div>
 </div>
@@ -178,3 +196,9 @@ li
 </footer>
 </body>
 </html>
+"""
+f = open('bots.html','w')
+f.write(start + table + end)
+f.close()
+
+

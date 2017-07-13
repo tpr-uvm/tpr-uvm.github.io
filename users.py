@@ -174,15 +174,28 @@ table = """
     <th>Rank</th>
     <th>Username</th> 
     <th>Score</th>
+    <th>#Commands</th>
+    <th>#Reinforcements</th>
   </tr>
 """
 users = db.Fetch_Top_Users('all')
 rank = 1
 for i in users:
-
+	usn = i['userName']
 	table = table + '<tr><td>' + str(rank) + '</td>'
-	table = table + '<td>' + i['userName'] + '</td>'
-	table = table + '<td>' + str(int(i['score'])) + '</td></tr>'
+	table = table + '<td>' + usn + '</td>'
+	table = table + '<td>' + str(int(i['score'])) + '</td>'
+	
+	feedback = db.Fetch_User_Feedback(usn)
+	cmds = db.Fetch_User_Commands(usn)
+	rein = 0
+	if type(feedback) != type(str):
+		for j in feedback:
+			if j['feedback_type'] == 'y' or j['feedback_type'] == 'n':
+				rein += j['num']
+
+	table = table + '<td>' + str(cmds[0]['num']) + '</td>'
+	table = table + '<td>' + str(rein) + '</td></tr>'
 	rank = rank + 1
 
 table = table + '</table>'

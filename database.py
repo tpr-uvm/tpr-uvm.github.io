@@ -32,14 +32,20 @@ class DATABASE:
             self.connection.rollback()
 
     def Execute_Select_Sql_Command(self, sql_command, err_msg=""):
-
         results = None
         try:
             self.cursor.execute(sql_command)
             results = self.cursor.fetchall()
             self.connection.commit()
-        except:
-            print(err_msg)
+        except KeyboardInterrupt:
+            self.close()
+            sys.exit()
+        except (pymysql.OperationalError, pymysql.InternalError), e:
+            self.connect()
+            print str(e)
+        except pymysql.ProgrammingError, e:
+            print str(e)
+            print (err_msg)
         return results
 
     def Execute_SelectOne_Sql_Command(self, sql_command, err_msg=""):
@@ -468,4 +474,16 @@ class DATABASE:
         sql= """SELECT * FROM unique_commands WHERE active=1;"""
         err_msg ="Failed to get the current command..."
         return self.Execute_SelectOne_Sql_Command(sql, err_msg)
+        
+    def Fetch_User_Feedback(self, username):
+        sql ="""select count(*) as num, reward as feedback_type from reward_log
+         where userName='%s' group by reward;"""%(username)
+        return self.Execute_Select_Sql_Command(sql, 'Failed fetching feedback info for a user.')
+        
+    def Fetch_User_Commands(self,username):
+    	sql ="""select count(*) as num from command_log
+         where userName='%s';"""%(username)
+        return self.Execute_Select_Sql_Command(sql, 'Failed fetching feedback info for a user.')
+        
+    
 
