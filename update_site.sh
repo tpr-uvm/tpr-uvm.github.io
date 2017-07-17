@@ -1,8 +1,10 @@
 #! /bin/sh
+GTIMEOUT=/usr/local/bin/gtimeout
+
 cd /Users/twitchplaysrobotics/tpr_site/ && echo 'path set'
 python site.py && echo 'main page updated'
 python faqs.py && echo 'FAQ page updated'
-gtimeout 15 python cmds.py && echo 'commands page updated'
+$GTIMEOUT 15 python cmds.py && echo 'commands page updated'
 status=$?
 if test $status -eq 124
 then
@@ -11,7 +13,7 @@ elif test $status -gt 0
 then
 	echo 'commands page failed'
 fi
-gtimeout 15 python users.py && echo 'users page updated'
+$GTIMEOUT 15 python users.py && echo 'users page updated'
 status=$?q
 if test $status -eq 124
 then
