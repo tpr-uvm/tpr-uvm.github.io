@@ -2,7 +2,7 @@
 cd /users/twitchplaysrobotics/tpr_site/ && echo 'path set'
 python site.py && echo 'main page updated'
 python faqs.py && echo 'FAQ page updated'
-timeout 15 python cmds.py && echo 'commands page updated'
+gtimeout 15 python cmds.py && echo 'commands page updated'
 status=$?
 if test $status -eq 124
 then
@@ -11,8 +11,8 @@ elif test $status -gt 0
 then
 	echo 'commands page failed'
 fi
-timeout 15 python users.py && echo 'users page updated'
-status=$?
+gtimeout 15 python users.py && echo 'users page updated'
+status=$?q
 if test $status -eq 124
 then
 	echo 'users page timed out'
