@@ -21,7 +21,8 @@ elif test $status -gt 0
 then
 	echo 'users page failed'
 fi
-git add --all && echo 'git added'
+git add -u && echo 'git added'
+git reset -- Settings.py
 git commit -m "Update" && echo 'git committed'
 git push -u origin master && echo 'git pushed'
 echo 'end of script'
