@@ -182,15 +182,15 @@ commands = db.Fetch_Topn_Unique_Commands('all')
 rank = 1
 for i in commands:
 
-  if i['cmd'] in naughty_words:
-    cmd = '****'
-  else:
-    cmd = i['cmd']
+    if i['cmd'] in naughty_words:
+        cmd = '****'
+    else:
+        cmd = i['cmd']
 
-	table = table + '<tr><td>' + str(rank) + '</td>'
-	table = table + '<td>' + cmd + '</td>'
-	table = table + '<td>' + str(int(i['score'])) + '</td></tr>'
-	rank = rank + 1
+    table = table + '<tr><td>' + str(rank) + '</td>'
+    table = table + '<td>' + cmd + '</td>'
+    table = table + '<td>' + str(int(i['score'])) + '</td></tr>'
+    rank = rank + 1
 
 table = table + '</table>'
 
