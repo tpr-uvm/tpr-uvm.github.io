@@ -123,6 +123,7 @@ li
       	<li><a href="#liking">Why should I like (or dislike) a robot?		</a></li>
       	<li><a href="#whatcommands">What commands are available?		</a></li>
       	<li><a href="#robots">What robots are used in this project?		</a></li>
+      	<li><a href="#silver">What is the silver robot that's displayed?	</a></li>
       	<li><a href="#twitch">Why are we using Twitch?				</a></li>
       	<li><a href="#team">Who is the TPR Team?				</a></li>
       	<li><a href="#myscore">How is my score calculated?			</a></li>
@@ -156,6 +157,9 @@ li
       	
       	<dt><div id="robots">What robots are used in this project?</div></dt>
       	<dd>As you'll notice, the bodies and behaviors of the robots are all different. Indeed, what we wish to discover it not just which commands the robots can learn, but which robots are able to learn more command than others. When a robots spawns an offspring robot, the offspring has a slightly different morphology and/or behavior from its parent. Also, every hour, a new robot is "injected" into the population. Thus, like commands, there are no-prespecified robots. </dd>
+      	
+      	<dt><div id="silver">What is the silver robot that's displayed?</div></dt>
+      	<dd>Every hour, a silver robot will pop up onto the screen. This robot is before unseen, and if you're there to watch it, you can be the first to help train it!</dd>
       	
       	<dt><div id="twitch">Why are we using Twitch?</div></dt>
       	<dd>Twitch is ideal for our project because it supports bidirectional communication. You can easily speak to the robots, and the robots can show you which commands they've learned by obeying, or failing to obey, the current command.</dd>
