@@ -1,6 +1,5 @@
 #! /bin/sh
-cd ~/Desktop/tpr
-echo 'path set'
+cd /users/twitchplaysrobotics/tpr_site/ && echo 'path set'
 python site.py && echo 'main page updated'
 python faqs.py && echo 'FAQ page updated'
 timeout 15 python cmds.py && echo 'commands page updated'
