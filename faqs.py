@@ -106,6 +106,7 @@ li
         <li><a href="users.html">Users</a></li>
         <li><a href="cmds.html">Commands</a></li>
         <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="https://discord.gg/HEwMhfP">Discord Chat</a></li>
         <li><a href="abusepolicy.html">Abuse Policy</a></li>
         
       </ul><br>  
