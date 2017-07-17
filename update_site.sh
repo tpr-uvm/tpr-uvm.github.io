@@ -14,7 +14,7 @@ then
 	echo 'commands page failed'
 fi
 $GTIMEOUT 15 python users.py && echo 'users page updated'
-status=$?q
+status=$?
 if test $status -eq 124
 then
 	echo 'users page timed out'
